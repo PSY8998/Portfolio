@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <title>WowFolio - A Simple & Clean Portfolio Template For Developers</title>
+  <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
+  <title>Scrolling Image Section</title>
+  <title>Image Slider</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img src="./assets/IMG_20231118_163904032_HDR.jpg" alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Parshant Yadav</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello 👋</span>
+          <span class="heading-primary__main">
+            I'm Parshant! Let's build something amazing together! I'm a passionate Android developer
+            with a knack for crafting intuitive and engaging apps.
+          </span>
+        </h1>
+        <a href="./index.html#projects">
+          <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        </a>
+        <a href="./index.html#contact">
+          <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About 🦄</span>
+        <span class="heading-secondary__main">
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              About Me
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                I am B.Tech Graduate in Electronics and Communication Engineering.
+                passionate Android developer with hands-on experience
+                building my own Android apps. I am skilled in Kotlin and have a
+                strong grasp of Android development tools, frameworks, and best
+                practices. I am eager to bring my problem-solving skills and
+                enthusiasm to a dynamic team where I can continue to learn and
+                grow in the field.
+              </span>
+
+            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">Kotlin</li>
+              <li class="about__skill">Compose</li>
+              <li class="about__skill">KMP</li>
+              <li class="about__skill">Coroutines and Flows</li>
+              <li class="about__skill">Dagger, Hilt</li>
+              <li class="about__skill">Retrofit</li>
+              <li class="about__skill">MVVM</li>
+              <li class="about__skill">SQLite, Room</li>
+              <li class="about__skill">git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-kotlin-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-jetpackcompose-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-androidstudio-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-sqlite-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+
+      <li class="skills-showcase__list-item">
+        <i class="devicon-android-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-python-plain"></i>
+      </li>
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the personal and clients projects that I created with the project details
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            
+            <ul class="slides">
+              <input type="radio" name="radio-btn-one" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240831-133357.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-3" class="prev">&#x2039;</label>
+                  <label for="img-2" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-one" id="img-2" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240831-133411.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-1" class="prev">&#x2039;</label>
+                  <label for="img-3" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-one" id="img-3" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240518-133309.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-2" class="prev">&#x2039;</label>
+                  <label for="img-1" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              </li>
+            </ul>
+            <div class="projects__list-item-content">
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                ShapeShifter
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Developed a comprehensive workout tracking app designed to help users plan, log, and analyse their
+                  fitness.
+                </span>
+                <!-- <br />
+                    <br /> -->
+                <span>
+                  Utilized Jetpack Compose for a responsive and modern UI
+                  on Android.
+
+                </span>
+              </p>
+              <a href="https://github.com/PSY8998/ShapeShifter" target="_blank">
+                <button class="btn btn-theme projects__btn-theme">
+                  Code Link
+                </button></a>
+            </div>
+
+          </div>
+
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <ul class="slides">
+              <input type="radio" name="radio-btn-two" id="img-4" checked />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-074834.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-6" class="prev">&#x2039;</label>
+                  <label for="img-5" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-two" id="img-5" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-074837.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-4" class="prev">&#x2039;</label>
+                  <label for="img-6" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-two" id="img-6" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-175903.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-5" class="prev">&#x2039;</label>
+                  <label for="img-4" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <li class="nav-dots">
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+              </li>
+            </ul>
+            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+              Cinemasimplified
+            </h3>
+            <!-- <hr class="projects__title-text-divider" /> -->
+
+            <p class="text-primary projects__list-item-text-primary">
+              <span>
+                Sample movies application that allows users to
+                search, and browse a vast collection of movies and TV shows.
+              </span>
+              <span>
+                Utilized ViewModel to manage UI-related data and ROOM
+                for data persistence
+              </span>
+              <!-- <br />
+                    <br /> -->
+              <span>
+
+              </span>
+            </p>
+            <a href="https://github.com/PSY8998/CinemaSimplified" target="_blank">
+              <button class="btn btn-theme projects__btn-theme">
+                Code Link
+              </button></a>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <ul class="slides">
+              <input type="radio" name="radio-btn-three" id="img-7" checked />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-074706.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-9" class="prev">&#x2039;</label>
+                  <label for="img-8" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-three" id="img-8" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-074727.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-7" class="prev">&#x2039;</label>
+                  <label for="img-9" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <input type="radio" name="radio-btn-three" id="img-9" />
+              <li class="slide-container">
+                <div class="slide">
+                  <img src="./assets/Screenshot_20240915-175838.png" />
+                </div>
+                <div class="nav">
+                  <label for="img-8" class="prev">&#x2039;</label>
+                  <label for="img-7" class="next">&#x203a;</label>
+                </div>
+              </li>
+
+              <li class="nav-dots">
+                <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+                <label for="img-8" class="nav-dot" id="img-dot-8"></label>
+                <label for="img-9" class="nav-dot" id="img-dot-9"></label>
+              </li>
+            </ul>
+            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+              InstaClone
+            </h3>
+            <!-- <hr class="projects__title-text-divider" /> -->
+
+            <p class="text-primary projects__list-item-text-primary">
+              <span>
+                Clone UI application for Instagram, where you can see
+                posts, watch reels.
+              </span>
+              <span>
+                Simplified screen navigation and UI state management by
+                replacing traditional fragments with Jetpack Compose's
+                composable functions
+              </span>
+              <!-- <br />
+                    <br /> -->
+              <span>
+              </span>
+            </p>
+            <a href="https://github.com/PSY8998/InstaClone" target="_blank">
+              <button class="btn btn-theme projects__btn-theme">
+                Code Link
+              </button></a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Connect with Me
+        </span>
+      </h2>
+      <div class="main-section__content">
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <a href="https://github.com/PSY8998" target="_blank">
+            <img src="./assets/github-6980894_960_720.webp" alt="GitHub Logo" class="logo">
+            <span>github.com/PSY8998</a></span>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/parshantydv/" target="_blank">
+            <img src="./assets/61109.png" alt="LinkedIn Logo" class="logo">
+            <span>linkedin.com/in/parshantydv/</a></span>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:parshantyadav954@gmail.com">
+            <img src="./assets/646094.png" alt="Email Icon" class="logo">
+            <span>parshantyadav954@gmail.com</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/PSY8998" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/parshantydv/" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
